@@ -269,10 +269,8 @@ body.light .nav-links a {
 }
 
 .menu-item img {
-    width: 100%;
-    width: 170px;
-    height: 170px;
-    height: auto;
+    width: auto;
+    height: 250px;
     border-radius: 15px;
     margin-bottom: 12px;
 }
@@ -311,13 +309,6 @@ body.light .nav-links a {
   color: #68400A;
 }
 
-.menu-bottom-content img {
-  display: inline;
-  width: 848px;
-  height: 492px;
-  margin-bottom: 12px;
-}
-
 
 .why-us {
   background-color: #fde9c9;
@@ -335,7 +326,7 @@ body.light .nav-links a {
 .reasons li {
   display: flex;
   align-items: flex-start;
-  gap: 15px;
+  gap: 18px;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -344,7 +335,8 @@ body.light .nav-links a {
   width: 70px;
   height: 70px;
   flex-shrink: 0;
-  margin-top: 4px;
+   align-self: flex-start;
+   transform: translateY(-15px);
 }
 
 .reasons p {
@@ -510,6 +502,28 @@ body.light .nav-links a {
   color: #f86b87;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  background-color: #e7b7c1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none; /* скрыта изначально */
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #e65873;
+}
+
 body.light {
   background-color: #fff;
   color: #000;
@@ -637,8 +651,8 @@ body.dark .menu-bottom-content p {
 }
 
 body.dark .menu-bottom-content img {
-  width: 848px;
-  height: 492px;
+  width: 609px;
+  height: auto;
   margin-bottom: 12px;
 }
 
@@ -648,11 +662,13 @@ body.dark .contacts-form textarea {
   color: #e0e0e0;                 
   border: 1px solid #555555;     
   font-family: 'Comfortaa', sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   padding: 12px;
   border-radius: 30px;
   resize: vertical;
   transition: border-color 0.3s, background-color 0.3s;
+  padding-left: 20px;
+  width: 100%;
 }
 
 
@@ -892,8 +908,8 @@ body.dark .theme-toggle .toggle-circle {
 
   body.dark .menu-bottom-content img,
  body.light .menu-bottom-content img {
-     max-width: 100%;
-     height: auto;
+  width: 609px;
+  height: auto;
   }
 
   
@@ -1001,6 +1017,10 @@ body.dark .review {
   resize: vertical;
   font-size: 16px;
   padding-left: 20px;
+}
+
+.footer p {
+  font-size: 12px;
 }
 
 }

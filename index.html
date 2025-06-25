@@ -104,49 +104,49 @@
           <img src="img/menu1.png">
           <h3>Таро</h3>
           <p class="description">Напиток из порошка таро с кокосовым молоком, тапиокой и сливками</p>
-          <p class="price">350 мл / 250 ₽</p>         
+          <p class="price">350 мл / 450 ₽</p>         
         </div>
        <div class="menu-item">
           <img src="img/menu2.png">
          <h3>Карамельный</h3>
         <p class="description">Сладкий молочный чай с насыщенным вкусом карамели и нежными шариками тапиоки</p>
-       <p class="price">350 мл / 260 ₽</p>         
+       <p class="price">350 мл / 430 ₽</p>         
        </div>
       <div class="menu-item">
         <img src="img/menu3.png">
         <h3>Тирамису</h3>
         <p class="description">Кофейный молочный чай с нежным кремом маскарпоне, тапиокой и ароматом какао</p>
-         <p class="price">350 мл / 270 ₽</p>         
+         <p class="price">350 мл / 470 ₽</p>         
       </div>
     </div>
   </div>  
 
      <div class="menu-group hidden" data-category="fruit">
   <div class="menu-item">
-    <img src="img/fruity_1.png" alt="Манговый бабл-ти">
-    <h3>Манговый бабл-ти</h3>
-    <p class="description">Сок манго, лёд, фруктовые шары</p>
-    <p class="price">350 мл / 240 ₽</p>         
+    <img src="img/menu4.png">
+    <h3>Вишнёвый зелёный чай</h3>
+    <p class="description">Зелёный чай с насыщенным вкусом вишни, покрытый воздушной сырной шапкой</p>
+    <p class="price">350 мл / 230 ₽</p>         
   </div>
   <div class="menu-item">
-    <img src="img/fruity_2.png" alt="Арбузный бабл-ти">
-    <h3>Арбузный бабл-ти</h3>
-    <p class="description">Свежий арбуз и сироп</p>
-    <p class="price">350 мл / 240 ₽</p>         
+    <img src="img/menu5.png" >
+    <h3> Клубничная матча</h3>
+    <p class="description">Нежное молоко с клубничным пюре, покрытое воздушной матча-дальгоной, со льдом и клубничными джусболлами</p>
+    <p class="price">350 мл / 250 ₽</p>         
   </div>
   <div class="menu-item">
-    <img src="img/fruity_3.png" alt="Киви бабл-ти">
-    <h3>Киви бабл-ти</h3>
-    <p class="description">Сок киви и зелёные шары</p>
-    <p class="price">350 мл / 240 ₽</p>         
+    <img src="img/menu6.png">
+    <h3>Манго-маракуйя</h3>
+    <p class="description">Экзотическое сочетание зелёного чая, манго, апельсинового и маракуйного пюре, манговые джусболлы</p>
+    <p class="price">350 мл / 270 ₽</p>         
   </div>
 </div>
 
 <div class="menu-group hidden" data-category="hot">
   <div class="menu-item">
-    <img src="img/hot_1.png" alt="Какао">
-    <h3>Какао</h3>
-    <p class="description">Горячее молоко с шоколадом</p>
+    <img src="img/menu7.png">
+    <h3>Малиновый раф</h3>
+    <p class="description">Сливочный кофе с натуральным малиновым сиропом</p>
     <p class="price">250 мл / 180 ₽</p>         
   </div>
   <div class="menu-item">
@@ -185,7 +185,7 @@
 </div>
 
     <div class="menu-bottom-content">
-      <img src="img/bubbletea_menu.png"/>
+      <img src="img/bubbletea-menu.png"/>
       <p>❤ Все напитки можно приготовить на альтернативном молоке и выбрать количество сахара </p>
     </div>
   </div>
@@ -288,6 +288,7 @@
       </div>
       <p class="footer-copy">&copy; 2025 Bubble Bliss. Все права защищены. Сайт является продуктом проектно-технологической практики, вся информация является вымышленной, совпадения случайны.</p>
     </div>
+    <button class="scroll-to-top" aria-label="Наверх">↑</button>
   </footer>
 
 
@@ -375,6 +376,25 @@
   if (tabs.length > 0) {
     tabs[0].click();
   }
+</script>
+
+<script>
+  const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 </script>
 
 </body>
