@@ -309,7 +309,6 @@ body.light .nav-links a {
   color: #68400A;
 }
 
-
 .why-us {
   background-color: #fde9c9;
   padding: 40px 20px;
@@ -749,6 +748,10 @@ body.dark .theme-toggle .toggle-circle {
 @media (max-width: 768px) {
 
   /* Адаптация основного контента */
+  .body {
+     overflow-x: hidden;
+  }
+
 
   .about-content,
   .contacts-content,
@@ -908,7 +911,7 @@ body.dark .theme-toggle .toggle-circle {
 
   body.dark .menu-bottom-content img,
  body.light .menu-bottom-content img {
-  width: 609px;
+  width: 300px;
   height: auto;
   }
 
