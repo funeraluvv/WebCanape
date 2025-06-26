@@ -1,1 +1,3 @@
-![Кейс](https://github.com/user-attachments/assets/c6c5905f-1c0e-421b-a51a-84c81401f0d7)# WebCanape
+# WebCanape
+![Кейс](https://github.com/user-attachments/assets/7ac4a8c1-c0fb-40b3-87ee-b54ee86bcf40)
+
