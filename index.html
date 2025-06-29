@@ -97,92 +97,7 @@
 
     <!-- Карточки меню -->
     <div class="menu-items">
-
-    <div class="menu-group" data-category="milky">
-      <div class="menu-group hidden" data-category="milky">
-        <div class="menu-item">
-          <img src="img/menu1.png">
-          <h3>Таро</h3>
-          <p class="description">Напиток из порошка таро с кокосовым молоком, тапиокой и сливками</p>
-          <p class="price">350 мл / 450 ₽</p>         
-        </div>
-       <div class="menu-item">
-          <img src="img/menu2.png">
-         <h3>Карамельный</h3>
-        <p class="description">Сладкий молочный чай с насыщенным вкусом карамели и нежными шариками тапиоки</p>
-       <p class="price">350 мл / 430 ₽</p>         
-       </div>
-      <div class="menu-item">
-        <img src="img/menu3.png">
-        <h3>Тирамису</h3>
-        <p class="description">Кофейный молочный чай с нежным кремом маскарпоне, тапиокой и ароматом какао</p>
-         <p class="price">350 мл / 470 ₽</p>         
-      </div>
     </div>
-  </div>  
-
-     <div class="menu-group hidden" data-category="fruit">
-  <div class="menu-item">
-    <img src="img/menu4.png">
-    <h3>Вишнёвый зелёный чай</h3>
-    <p class="description">Зелёный чай с насыщенным вкусом вишни, покрытый воздушной сырной шапкой</p>
-    <p class="price">350 мл / 230 ₽</p>         
-  </div>
-  <div class="menu-item">
-    <img src="img/menu5.png" >
-    <h3> Клубничная матча</h3>
-    <p class="description">Нежное молоко с клубничным пюре, покрытое воздушной матча-дальгоной, со льдом и клубничными джусболлами</p>
-    <p class="price">350 мл / 250 ₽</p>         
-  </div>
-  <div class="menu-item">
-    <img src="img/menu6.png">
-    <h3>Манго-маракуйя</h3>
-    <p class="description">Экзотическое сочетание зелёного чая, манго, апельсинового и маракуйного пюре, манговые джусболлы</p>
-    <p class="price">350 мл / 270 ₽</p>         
-  </div>
-</div>
-
-<div class="menu-group hidden" data-category="hot">
-  <div class="menu-item">
-    <img src="img/menu7.png">
-    <h3>Малиновый раф</h3>
-    <p class="description">Сливочный кофе с натуральным малиновым сиропом</p>
-    <p class="price">250 мл / 180 ₽</p>         
-  </div>
-  <div class="menu-item">
-    <img src="img/hot_2.png" alt="Матча латте">
-    <h3>Матча латте</h3>
-    <p class="description">Зелёный чай матча с молоком</p>
-    <p class="price">250 мл / 220 ₽</p>         
-  </div>
-  <div class="menu-item">
-    <img src="img/hot_3.png" alt="Пряный чай">
-    <h3>Пряный чай</h3>
-    <p class="description">Чёрный чай с корицей и молоком</p>
-    <p class="price">250 мл / 200 ₽</p>         
-  </div>
-</div>
-
-<div class="menu-group hidden" data-category="desserts">
-  <div class="menu-item">
-    <img src="img/dessert_1.png" alt="Чизкейк">
-    <h3>Чизкейк</h3>
-    <p class="description">Нежный сырный десерт с клубникой</p>
-    <p class="price">150 г / 210 ₽</p>         
-  </div>
-  <div class="menu-item">
-    <img src="img/dessert_2.png" alt="Маффин с черникой">
-    <h3>Маффин с черникой</h3>
-    <p class="description">Домашняя выпечка с ягодами</p>
-    <p class="price">150 г / 150 ₽</p>         
-  </div>
-  <div class="menu-item">
-    <img src="img/dessert_3.png" alt="Моти">
-    <h3>Моти</h3>
-    <p class="description">Японские рисовые пирожки с начинкой</p>
-    <p class="price">100 г (2 шт) / 120 ₽</p>         
-  </div>
-</div>
 
     <div class="menu-bottom-content">
       <img src="img/bubbletea-menu.png"/>
@@ -191,6 +106,50 @@
   </div>
 </section>
 
+<div id="modal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <img id="modal-img" src="" alt="" />
+    
+    <div class="modal-text">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+
+      <div id="modal-composition" class="composition">
+        <h4>Состав:</h4>
+        <p id="modal-ingredients"></p>
+      </div>
+
+      <div class="volume-block">
+        <h4>Объём:</h4>
+        <div id="modal-volume-select" class="volume-select"></div>
+      </div>
+
+      <p id="modal-price" class="price"><strong>Цена:</strong> —</p>
+
+      <div id="modal-nutrition" class="nutrition-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Ккал</th>
+              <th>Белки</th>
+              <th>Жиры</th>
+              <th>Углеводы</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="modal-calories"></td>
+              <td id="modal-protein"></td>
+              <td id="modal-fat"></td>
+              <td id="modal-carbs"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Блок преимуществ -->
 <section class="why-us" id="why-us">
@@ -290,40 +249,9 @@
     </div>
     <button class="scroll-to-top" aria-label="Наверх">↑</button>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
   <script>
     AOS.init();
 
@@ -351,31 +279,128 @@
     });
   </script>
 
-
 <script>
   const tabs = document.querySelectorAll('.tab');
-  const groups = document.querySelectorAll('.menu-group');
+const menuItemsContainer = document.querySelector('.menu-items');
+let menuData = {};
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      // удаляем активный класс со всех вкладок
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
+// Загрузка JSON-данных
+fetch('menu.json')
+  .then(response => response.json())
+  .then(data => {
+    menuData = data;
+    renderMenu('milky'); // категория по умолчанию
+  });
 
-      // получение нужной категории
-      const category = tab.getAttribute('data-category');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const category = tab.getAttribute('data-category');
+    renderMenu(category);
+  });
+});
 
-      // переключение групп
-      groups.forEach(group => {
-        group.classList.toggle('hidden', group.getAttribute('data-category') !== category);
+function renderMenu(category) {
+  const items = menuData[category] || [];
+  menuItemsContainer.innerHTML = `
+    <div class="menu-group" data-category="${category}">
+      ${items.map(item => `
+        <div class="menu-item" data-title="${item.title}" data-category="${category}">
+          <img src="${item.image}" alt="${item.title}">
+          <h3>${item.title}</h3>
+          <p class="description">${item.description}</p>
+          <p class="price">от ${item.volumes[0].price}</p>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  // Обновление цены и состава при клике на определенный объем
+  document.querySelectorAll('.menu-item').forEach(menuItem => {
+    const buttons = menuItem.querySelectorAll('.volume-btn');
+    const priceElement = menuItem.querySelector('.price');
+    const compositionElement = menuItem.querySelector('.composition');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', e => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        priceElement.textContent = btn.dataset.price;
+        compositionElement.textContent = btn.dataset.composition;
+        e.stopPropagation(); 
       });
     });
   });
 
-  // вначале открыта 1 категория
-  if (tabs.length > 0) {
-    tabs[0].click();
+  addClickListeners();
+}
+
+// Модалка
+const modal = document.getElementById('modal');
+const modalClose = document.getElementById('modal-close');
+
+function openModal(item) {
+  document.getElementById('modal-img').src = item.image;
+  document.getElementById('modal-title').textContent = item.title;
+  document.getElementById('modal-description').textContent = item.description;
+
+  const volumeContainer = document.getElementById('modal-volume-select');
+  volumeContainer.innerHTML = '';
+  const ingredientsEl = document.getElementById('modal-ingredients');
+  const priceEl = document.getElementById('modal-price');
+
+  document.getElementById('modal-calories').textContent = item.nutrition?.calories || '';
+  document.getElementById('modal-protein').textContent = item.nutrition?.protein || '';
+  document.getElementById('modal-fat').textContent = item.nutrition?.fat || '';
+  document.getElementById('modal-carbs').textContent = item.nutrition?.carbs || '';
+
+  if (item.volumes && item.volumes.length > 0) {
+    item.volumes.forEach((vol, index) => {
+      const btn = document.createElement('button');
+      btn.textContent = vol.volume;
+      btn.classList.add('volume-btn');
+      if (index === 0) {
+        btn.classList.add('active');
+        ingredientsEl.textContent = vol.composition;
+        priceEl.textContent = vol.price;
+      }
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#modal-volume-select .volume-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        ingredientsEl.textContent = vol.composition;
+        priceEl.textContent = vol.price;
+      });
+      volumeContainer.appendChild(btn);
+    });
+  } else {
+    ingredientsEl.textContent = item.composition || '';
+    priceEl.textContent = item.price || 'Цена не указана';
   }
+
+  modal.style.display = 'flex';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', e => {
+  if (e.target === modal) closeModal();
+});
+
+function addClickListeners() {
+  const cards = document.querySelectorAll('.menu-item');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const title = card.getAttribute('data-title');
+      const category = card.getAttribute('data-category');
+      const item = menuData[category]?.find(i => i.title === title);
+      if (item) openModal(item);
+    });
+  });
+}
 </script>
 
 <script>

@@ -255,46 +255,48 @@ body.light .nav-links a {
   display: none;
 }
 
-/* оформление карточки*/
+/* Карточка меню */
 .menu-item {
-    width: calc(33.33% - 16px); /* три в ряд с отступами */
-    background-color: #fffaf9;
-    border: 2px solid #F86B87;
-    border-radius: 30px;
-    padding: 16px;
-    text-align: center;
-    width: 340px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
+  width: 340px; /* фиксированная ширина */
+  background-color: #fffaf9;
+  border: 2px solid #F86B87;
+  border-radius: 30px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  box-shadow: 0 4px 15px rgba(240, 192, 103, 0.8);
+  transform: translateY(-5px);
 }
 
 .menu-item img {
-    width: auto;
-    height: 250px;
-    border-radius: 15px;
-    margin-bottom: 12px;
+  height: 250px;
+  width: auto;
+  border-radius: 15px;
+  margin-bottom: 12px;
 }
 
 .menu-item h3 {
-    font-size: 30px;
-    font-family: 'borsok';
-    color: #68400A;
-    margin: 0 0 4px;
+  font-family: 'borsok', cursive;
+  font-size: 30px;
+  margin: 0 0 4px 0;
+  color: #68400A;
 }
 
 .menu-item .price {
-    font-size: 24px;
-    color: #D81B40;
-    font-family: 'Comfortaa';
-    margin: 0;
-    font-weight: bolder;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0;
+  color: #D81B40;
 }
 
 .menu-item .description {
-    font-size: 24px;
-    color: #68400A;
-    font-family: 'Comfortaa';
-    margin: 0;
+  font-size: 24px;
+  margin: 0;
 }
 
 .menu-bottom-content {
@@ -303,10 +305,162 @@ body.light .nav-links a {
 }
 
 .menu-bottom-content p {
-  font-family: 'Comfortaa';
   font-weight: bold;
   font-size: 24px;
+}
+
+/* Модальное окно */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(61, 19, 28, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Контент модалки */
+.modal-content {
+  background-color: #fffaf9;
+  border: 2px solid #F86B87;
+  border-radius: 30px;
+  padding: 30px 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(240, 107, 135, 0.4);
   color: #68400A;
+  position: relative;
+  font-size: 18px;
+}
+
+/* Крестик закрытия */
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #D81B40;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #F86B87;
+}
+
+/* Изображение */
+#modal-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Заголовок */
+#modal-title {
+  font-family: 'borsok', cursive;
+  font-size: 36px;
+  margin: 0 0 12px 0;
+  color: #68400A;
+}
+
+/* Описание */
+#modal-description {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  font-family: 'Comfortaa';
+}
+
+/* Состав */
+.composition h4,
+.volume-block h4 {
+  font-family: 'Comfortaa', cursive;
+  color: #68400A;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.composition p {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+/* Объём */
+.volume-block {
+  margin-bottom: 18px;
+}
+
+.volume-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.volume-select button {
+  background-color: #fffaf9;
+  border: 2px solid #F86B87;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-weight: 600;
+  color: #D81B40;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 20px;
+  font-family: 'Comfortaa';
+  font-weight: bold;
+}
+
+.volume-select button.active,
+.volume-select button:hover {
+  background-color: #F86B87;
+  color: #fffaf9;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bolder;
+  margin-bottom: 12px;
+  color: #D81B40;
+}
+#modal-kcal {
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #D81B40;
+  font-size: 20px;
+}
+
+/* Таблица КБЖУ */
+.nutrition-table {
+  margin-top: 12px;
+}
+
+.nutrition-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  text-align: center;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+  border: 1px solid #F86B87;
+  padding: 10px 12px;
+}
+
+.nutrition-table thead {
+  background-color: #FEE9E9;
+}
+
+.nutrition-table tbody tr:hover {
+  background-color: #FFD7D7;
+  transition: background-color 0.3s ease;
 }
 
 .why-us {
