@@ -255,7 +255,7 @@ body.light .nav-links a {
   display: none;
 }
 
-/* Карточка меню */
+
 .menu-item {
   width: 340px; /* фиксированная ширина */
   background-color: #fffaf9;
@@ -266,6 +266,7 @@ body.light .nav-links a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
+  /* width: calc(33.33% - 16px); // Можно убрать, если фикс ширина */
 }
 
 .menu-item:hover {
@@ -299,6 +300,7 @@ body.light .nav-links a {
   margin: 0;
 }
 
+
 .menu-bottom-content {
   text-align: center;
   margin-top: 12px;
@@ -309,7 +311,6 @@ body.light .nav-links a {
   font-size: 24px;
 }
 
-/* Модальное окно */
 .modal {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -322,7 +323,6 @@ body.light .nav-links a {
   overflow-y: auto;
 }
 
-/* Контент модалки */
 .modal-content {
   background-color: #fffaf9;
   border: 2px solid #F86B87;
@@ -336,7 +336,6 @@ body.light .nav-links a {
   font-size: 18px;
 }
 
-/* Крестик закрытия */
 .modal-close {
   position: absolute;
   top: 18px;
@@ -352,7 +351,6 @@ body.light .nav-links a {
   color: #F86B87;
 }
 
-/* Изображение */
 #modal-img {
   width: 100%;
   max-height: 320px;
@@ -423,6 +421,7 @@ body.light .nav-links a {
   color: #fffaf9;
 }
 
+/* Цена */
 .price {
   font-size: 28px;
   font-weight: bolder;
@@ -898,6 +897,100 @@ body.dark .theme-toggle .toggle-circle {
   transform: translateX(36px);
 }
 
+body.dark .modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.dark .modal-content {
+  background-color: #2a1e1e;
+  color: #fceeee;
+  border-color: #F86B87;
+  box-shadow: 0 6px 18px rgba(248, 107, 135, 0.6);
+}
+
+
+body.dark .modal-close {
+  color: #fceeee;
+}
+
+body.dark .modal-close:hover {
+  color: #F86B87;
+}
+
+body.dark .volume-select button {
+  background-color: #2a1e1e;
+  border-color: #F86B87;
+  color: #F86B87;
+}
+
+body.dark .volume-select button.active,
+body.dark .volume-select button:hover {
+  background-color: #F86B87;
+  color: #2a1e1e;
+}
+
+body.dark .price,
+body.dark #modal-kcal {
+  color: #F86B87;
+}
+
+body.dark .nutrition-table thead {
+  background-color: #3c2c2c;
+}
+
+body.dark .nutrition-table tbody tr:hover {
+  background-color: #4a3a3a;
+}
+
+body.dark .nutrition-table th,
+body.dark .nutrition-table td {
+  border-color: #F86B87;
+  color: #fceeee;
+}
+
+body.dark #modal-title {
+  color: #FFDDE2; 
+}
+
+
+body.dark #modal-description {
+  color: #FFECEF;
+}
+
+
+body.dark-theme .composition h4,
+body.dark-theme .volume-block h4 {
+  color: #FFBACB;
+}
+
+
+body.dark .composition p {
+  color: #FFF0F3;
+}
+
+
+body.dark .volume-select button {
+  background-color: #1f1f1f;
+  border-color: #F86B87;
+  color: #F86B87;
+}
+
+body.dark .volume-select button.active,
+body.dark .volume-select button:hover {
+  background-color: #F86B87;
+  color: #fffaf9;
+}
+
+body.dark .price,
+body.dark #modal-kcal {
+  color: #FFA1BC;
+}
+
+body.dark .composition h4,
+body.dark .volume-block h4 {
+  color: #FFB6C1; 
+}
+
 /* адаптивность */
 @media (max-width: 768px) {
 
@@ -1180,6 +1273,70 @@ body.dark .review {
   font-size: 12px;
 }
 
+ .modal-content {
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+
+  #modal-img {
+    max-height: 200px;
+    margin-bottom: 16px;
+  }
+
+  #modal-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  #modal-description {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+
+  .composition h4,
+  .volume-block h4 {
+    font-size: 20px;
+  }
+
+  .composition p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .volume-select {
+    gap: 6px;
+  }
+
+  .volume-select button {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .price {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  #modal-kcal {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .nutrition-table table {
+    font-size: 16px;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 8px;
+  }
+
+  .modal-close {
+    font-size: 28px;
+    top: 12px;
+    right: 16px;
+  }
 }
 
 
