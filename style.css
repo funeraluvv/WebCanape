@@ -309,6 +309,13 @@ body.light .nav-links a {
 .menu-bottom-content p {
   font-weight: bold;
   font-size: 24px;
+  color: #68400A;
+}
+
+.menu-bottom-content img {
+  width: 609px;
+  height: auto;
+  margin-bottom: 12px;
 }
 
 .modal {
@@ -796,16 +803,7 @@ body.dark .menu-item .description {
 }
 
 body.dark .menu-bottom-content p {
-  font-family: 'Comfortaa';
-  font-weight: bold;
-  font-size: 24px;
   color: #e0c28c;
-}
-
-body.dark .menu-bottom-content img {
-  width: 609px;
-  height: auto;
-  margin-bottom: 12px;
 }
 
 body.dark .contacts-form input,
@@ -813,9 +811,6 @@ body.dark .contacts-form textarea {
   background-color: #292929;       
   color: #e0e0e0;                 
   border: 1px solid #555555;     
-  font-family: 'Comfortaa', sans-serif;
-  font-size: 16px;
-  padding: 12px;
   border-radius: 30px;
   resize: vertical;
   transition: border-color 0.3s, background-color 0.3s;
@@ -1182,19 +1177,6 @@ body.dark .volume-block h4 {
   line-height: 1.4;
 }
 
-.review {
-  background: white;
-  border-radius: 30px;
-  padding: 20px;
-  max-width: 350px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  font-style: italic;
-  font-family: 'Comfortaa';
-  color: #68400A;
-  font-weight: bold;
-  font-size: 15px;
-}
-
   /* Подвал */
   .footer-socials {
     margin-top: 15px;
@@ -1233,12 +1215,12 @@ body.dark .review {
   border-radius: 30px;
   padding: 20px;
   max-width: 350px;
-  font-style: italic;
-  font-family: 'Comfortaa';
-  color: #68400A;
-  font-weight: bold;
+}
+
+body.dark .review p{
   font-size: 15px;
 }
+
 
 .contacts-info {
   flex: 1 1 40%;
