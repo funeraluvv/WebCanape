@@ -185,7 +185,7 @@
         "fat": "6 г",
         "carbs": "12 г"
       },
-      "image": "img/hot_2.png",
+      "image": "img/menu8.png",
       "description": "Зелёный чай матча с молоком"
     },
     {
@@ -208,79 +208,79 @@
         "fat": "4 г",
         "carbs": "15 г"
       },
-      "image": "img/hot_3.png",
+      "image": "img/menu9.png",
       "description": "Чёрный чай с корицей и молоком"
     }
   ],
-  "desserts": [
-    {
-      "title": "Чизкейк",
-      "volumes": [
-        {
-          "volume": "150 г",
-          "composition": "Сыр, сахар, мука, клубника",
-          "price": "190 ₽"
-        },
-        {
-          "volume": "200 г",
-          "composition": "Сыр, сахар, мука, клубника, больше ягод",
-          "price": "210 ₽"
-        }
-      ],
-      "nutrition": {
-        "calories": "320 ккал",
-        "protein": "6 г",
-        "fat": "20 г",
-        "carbs": "25 г"
+ "desserts": [
+  {
+    "title": "Чизкейк",
+    "volumes": [
+      {
+        "volume": "150 г",
+        "composition": "Сыр, сахар, мука, клубника",
+        "price": "190 ₽"
       },
-      "image": "img/dessert_1.png",
-      "description": "Нежный сырный десерт с клубникой"
+      {
+        "volume": "200 г",
+        "composition": "Сыр, сахар, мука, клубника, больше ягод",
+        "price": "210 ₽"
+      }
+    ],
+    "nutrition": {
+      "calories": "320 ккал",
+      "protein": "6 г",
+      "fat": "20 г",
+      "carbs": "25 г"
     },
-    {
-      "title": "Маффин с черникой",
-      "volumes": [
-        {
-          "volume": "150 г",
-          "composition": "Мука, яйца, сахар, черника",
-          "price": "170 ₽"
-        },
-        {
-          "volume": "200 г",
-          "composition": "Мука, яйца, сахар, черника, сливки",
-          "price": "190 ₽"
-        }
-      ],
-      "nutrition": {
-        "calories": "300 ккал",
-        "protein": "5 г",
-        "fat": "15 г",
-        "carbs": "30 г"
+    "image": "img/dessert_1.jpg",
+    "description": "Нежный сырный десерт с клубникой"
+  },
+  {
+    "title": "Моти с клубникой",
+    "volumes": [
+      {
+        "volume": "100 г (2 шт)",
+        "composition": "Рисовая мука, сахар, клубника, сливочный крем",
+        "price": "160 ₽"
       },
-      "image": "img/dessert_2.png",
-      "description": "Вкусный маффин с ягодами черники"
+      {
+        "volume": "150 г (4 шт)",
+        "composition": "Рисовая мука, сахар, клубника, сливочный крем",
+        "price": "210 ₽"
+      }
+    ],
+    "nutrition": {
+      "calories": "280 ккал",
+      "protein": "3 г",
+      "fat": "6 г",
+      "carbs": "50 г"
     },
-    {
-      "title": "Шоколадный брауни",
-      "volumes": [
-        {
-          "volume": "150 г",
-          "composition": "Шоколад, мука, сахар, орехи",
-          "price": "200 ₽"
-        },
-        {
-          "volume": "200 г",
-          "composition": "Шоколад, мука, сахар, орехи, дополнительный шоколад",
-          "price": "220 ₽"
-        }
-      ],
-      "nutrition": {
-        "calories": "350 ккал",
-        "protein": "6 г",
-        "fat": "18 г",
-        "carbs": "40 г"
+    "image": "img/dessert_2.jpg",
+    "description": "Мягкие рисовые пирожки с начинкой из свежей клубники и сливочного крема"
+  },
+  {
+    "title": "Макарунсы",
+    "volumes": [
+      {
+        "volume": "90 г (3 шт)",
+        "composition": "Миндальная мука, сахар, сливочный крем, натуральные красители",
+        "price": "150 ₽"
       },
-      "image": "img/dessert_3.png",
-      "description": "Шоколадный десерт с орехами"
-    }
-  ]
+      {
+        "volume": "150 г (5 шт)",
+        "composition": "Миндальная мука, сахар, сливочный крем, натуральные красители",
+        "price": "230 ₽"
+      }
+    ],
+    "nutrition": {
+      "calories": "310 ккал",
+      "protein": "4 г",
+      "fat": "14 г",
+      "carbs": "40 г"
+    },
+    "image": "img/dessert_3.jpg",
+    "description": "Французские пирожные с хрустящей корочкой и нежной начинкой"
+  }
+]
 }

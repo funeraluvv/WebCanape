@@ -84,10 +84,9 @@ body.light .nav-links a {
 }
 
 .hero-content {
-  display: flex;
+   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .hero-left, .about-left {
@@ -109,6 +108,7 @@ body.light .nav-links a {
   font-size: 24px;
   color: #68400A;
   margin-bottom: 45px;
+  font-weight: bold;
 }
 
 .hero-button {
@@ -167,11 +167,15 @@ body.light .nav-links a {
   max-width: none;
   flex: 1;
   text-align: center;
+  overflow: visible;
 }
 
 .main-drink {
-  max-width: 100%;
+   max-width: 100%;
   height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .about {
@@ -658,7 +662,7 @@ body.light .nav-links a {
 }
 
 .footer-socials a:hover {
-  color: #f86b87;
+  color: #f0a0b0;
 }
 
 .scroll-to-top {
@@ -738,10 +742,6 @@ body.dark .review {
   background: #292929; 
   color: #e0c28c;      
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); 
-  font-style: italic;
-  font-family: 'Comfortaa';
-  font-weight: bold;
-  font-size: 24px;
   border-radius: 30px;
   padding: 20px;
   max-width: 350px;
@@ -749,12 +749,9 @@ body.dark .review {
 
 body.dark .review span {
   color: #f86b87; 
-  font-weight: bold;
-  font-size: 24px;
   display: block;
   margin-top: 10px;
   text-align: right;
-  font-family: 'Comfortaa';
 }
 
 body.dark .hero-button,
@@ -781,10 +778,7 @@ body.dark .menu-item img {
 }
 
 body.dark .menu-item h3 {
-  font-size: 30px;
-  font-family: 'borsok';
   color: #e0c28c; 
-  margin: 0 0 4px;
 }
 
 body.dark .menu-item .price {
@@ -824,7 +818,7 @@ body.dark .footer-socials a {
 }
 
 body.dark .footer-socials a:hover {
-  color: #f86b87;
+  color: #f8839b;
 }
 
 .theme-toggle {
@@ -1145,11 +1139,6 @@ body.dark .volume-block h4 {
     font-size: 14px;
   }
 
-  body.dark .menu-item .description,
-  body.dark .menu-item .price {
-    font-size: 14px;
-  }
-
 
   body.dark .menu-bottom-content img,
  body.light .menu-bottom-content img {
@@ -1164,7 +1153,6 @@ body.dark .volume-block h4 {
 
   body.dark .menu-bottom-content p {
      color: #f0cb7b;
-     font-size: 14px;
   }
 
 
@@ -1216,11 +1204,6 @@ body.dark .review {
   padding: 20px;
   max-width: 350px;
 }
-
-body.dark .review p{
-  font-size: 15px;
-}
-
 
 .contacts-info {
   flex: 1 1 40%;
